@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    font-family: "Poppins", serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 1106px;
+
+}
+
+.item {
+    width: 45%;
+}
+
+.item1 h1 {
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.item1 p {
+    color: hsl(0, 0%, 100%);
+
+}
+
+
+
+.item2 button {
+    font-family: "Poppins", serif;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 4%, 80%);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 2px 8px 3px -1px hsl(249deg 10% 26% / 58%);
+}
+
+.item2 button:hover {
+    background-color: hsl(248, 29%, 39%);
+    box-shadow: 2px 8px 3px -1px hsl(249deg 10% 26% / 78%);
+}
+
+.item2 button span {
+    color: hsl(0, 11%, 91%);
+    font-weight: 700;
+}
+
+.subscribe {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.form {
+    margin-bottom: 1rem;
+}
+
+.subscribe input {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-family: "Poppins", serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(250, 5%, 78%);
+    border-radius: 0.3rem;
+}
+
+.subscribe input:hover {
+    border-width: 1px;
+    border-color: hsl(250, 18%, 67%);
+}
+
+.subscribe input:focus {
+    outline: none;
+    border-width: 1px;
+    border-color: hsl(249, 10%, 26%);
+
+}
+
+.subscribe input::placeholder {
+    color: hsl(251, 46%, 19%);
+
+}
+
+.subscribe .button {
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    box-shadow: inset 0px -3px 2px 1px hsl(154deg 59.45% 43.55%);
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe .button:hover {
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: inset 0px 3px 2px 1px hsl(154deg 59.45% 43.55%);
+}
+
+.accept {
+    color: hsl(252, 13%, 63%);
+    font-size: 0.6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.accept a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.error {
+    color: hsl(0, 100%, 74%);
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    display: none;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.warning {
+    animation: shake 0.2s ease-in-out;
+}
+
+.error img {
+    width: 16px;
+    height: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 1100px) {
+    .card {
+        width: 900px;
+    }
+
+    .item {
+        width: 47%;
+    }
+
+    .item1 h1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .card {
+        width: 750px;
+    }
+
+    .item {
+        width: 48%;
+    }
+
+    .item1 h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .item1 h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .item1 p {
+        text-align: center;
+    }
+}
